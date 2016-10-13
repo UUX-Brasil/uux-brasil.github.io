@@ -14,15 +14,16 @@ This library exposes a class named `AgileAudioPlayer`.
 
 ### AgileAudioPlayer
 
-**Syntax***
-        new AgileAudioPlayer();
-        new AgileAudioPlayer(*audioTagElement*);
+**Syntax**
+
+    new AgileAudioPlayer();
+    new AgileAudioPlayer(*audioTagElement*);
         
 **Example**
 
-        var player = new AgileAudioPlayer(document.getElementById('audioPlayer'));
-        var m3u = 'http://net1.cope.stream.flumotion.com/cope/net1.mp3.m3u';
-        player.init(m3u);
+    var player = new AgileAudioPlayer(document.getElementById('audioPlayer'));
+    var m3u = 'http://net1.cope.stream.flumotion.com/cope/net1.mp3.m3u';
+    player.init(m3u);
 
 ### Methods
 
@@ -30,9 +31,9 @@ This library exposes a class named `AgileAudioPlayer`.
 
 Initializes the player with a media src url, it returns a promise that can 
 
-**Syntax**
+**Syntax
 
-        AgileAudioPlayer.init(*srcUrlString*);
+    AgileAudioPlayer.init(*srcUrlString*);
 
 **Returns**
 
@@ -40,14 +41,14 @@ A `Promise` object
 
 **Example**
 
-        var player = new AgileAudioPlayer();
-        var m3u = 'http://net1.cope.stream.flumotion.com/cope/net1.mp3.m3u';
-        player.init(m3u).then(function() {
-          console.info('Player inialized successfully');
-        })
-        .catch(function(error){
-          console.error(error);
-        });
+    var player = new AgileAudioPlayer();
+    var m3u = 'http://net1.cope.stream.flumotion.com/cope/net1.mp3.m3u';
+    player.init(m3u).then(function() {
+      console.info('Player inialized successfully');
+    })
+    .catch(function(error){
+      console.error(error);
+    });
 
 ### Properties
 
@@ -68,11 +69,11 @@ It is possible to add events and control all this object programatically usining
 1. Install Node.js
 2. Install the dependences:
 
-        $ npm install gulp -g
-        $ npm install
-        
+    $ npm install gulp -g
+    $ npm install
+
 3. Run the gulp command:
 
-        $ gulp
+    $ gulp
         
 The build build output will be available in the `dist` folder.
