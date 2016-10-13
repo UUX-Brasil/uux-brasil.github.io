@@ -1,0 +1,23 @@
+{
+  "name": "agile-audio-player",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UUX-Brasil/agile-audio-player.git"
+  },
+  "author": "Eduardo Cobuci",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/UUX-Brasil/agile-audio-player/issues"
+  },
+  "homepage": "https://github.com/UUX-Brasil/agile-audio-player#readme",
+  "devDependencies": {
+    "webpack": "^1.13.2"
+  }
+}
