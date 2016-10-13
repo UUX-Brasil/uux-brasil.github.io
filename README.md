@@ -31,7 +31,7 @@ This library exposes a class named `AgileAudioPlayer`.
 
 Initializes the player with a media src url, it returns a promise that can 
 
-**Syntax
+**Syntax**
 
     AgileAudioPlayer.init(*srcUrlString*);
 
