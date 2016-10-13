@@ -9,12 +9,19 @@
 </body>
 <script type="text/javascript" src="../dist/agile-audio-player.min.js"></script>
 <script type="text/javascript">
+  var mp3 = 'http://www.stephaniequinn.com/Music/Allegro%20from%20Duet%20in%20C%20Major.mp3';
+  var m3u = 'http://net1.cope.stream.flumotion.com/cope/net1.mp3.m3u'; 
   var player = new AgileAudioPlayer(document.getElementById('audioPlayer'));
-  player.init('http://net1.cope.stream.flumotion.com/cope/net1.mp3.m3u').then(function() {
+  // The player supports both mp3 and m3u files
+  player.init(m3u).then(function() {
     console.info('Player inialized successfully');
   })
   .catch(function(error){
     console.error(error);
+  });
+  // Control the audio element
+  player.audioElement.addEventListener('progress', function(){
+    console.log("Current time: ", this.currentTime);
   });
 </script>
 </html>
