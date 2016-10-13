@@ -33,7 +33,8 @@ gulp.task('uglify', function() {
 
 gulp.task('concat', function() {
   return gulp.src([
-    './src/index.js',
+    './src/agile-audio-player.js',
+    './src/m3u.js'
   ])
   .pipe(concat(DIST_FILE))
   .pipe(gulp.dest(DIST_FOLDER));

@@ -44,8 +44,6 @@
 
   window.AgileAudioPlayer = AgileAudioPlayer;
 })();
-
-
 /////////////////////////
 // M3U Parser
 /////////////////////////
