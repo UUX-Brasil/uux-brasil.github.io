@@ -1,0 +1,20 @@
+<html>
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <title>Agile Audio Player Sample</title>
+</head>
+<body>
+  <h1>Agile Audio Player - Sample Implementation</h1>
+  <audio id="audioPlayer" controls="true" />
+</body>
+<script type="text/javascript" src="../dist/agile-audio-player.min.js"></script>
+<script type="text/javascript">
+  var player = new AgileAudioPlayer(document.getElementById('audioPlayer'));
+  player.init('http://net1.cope.stream.flumotion.com/cope/net1.mp3.m3u').then(function() {
+    console.info('Player inialized successfully');
+  })
+  .catch(function(error){
+    console.error(error);
+  });
+</script>
+</html>
