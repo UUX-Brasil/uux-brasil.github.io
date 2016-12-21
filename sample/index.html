@@ -13,7 +13,7 @@
   var m3u = 'http://net1.cope.stream.flumotion.com/cope/net1.mp3.m3u'; 
   var player = new AgileAudioPlayer(document.getElementById('audioPlayer'));
   // The player supports both mp3 and m3u files
-  player.init(m3u).then(function() {
+  player.init(mp3).then(function() {
     console.info('Player inialized successfully');
   })
   .catch(function(error){
